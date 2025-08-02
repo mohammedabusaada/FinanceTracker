@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/balanceTV_MainActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/balance_0_00"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="12dp"/>
+
+    <TextView
+        android:id="@+id/incomeTV_MainActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_income_0_00"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/balanceTV_MainActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/expenseTV_MainActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_expense_0_00"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/incomeTV_MainActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/addTransactionBtn_MainActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_transaction"
+        app:layout_constraintTop_toBottomOf="@id/expenseTV_MainActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/viewTransactionsBtn_MainActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/view_all_transactions"
+        app:layout_constraintTop_toBottomOf="@id/addTransactionBtn_MainActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
