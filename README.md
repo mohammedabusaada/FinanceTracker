@@ -27,5 +27,4 @@ The app allows users to:
 
 ## 📺 Video Demo
 
-Watch the full explanation and walkthrough video on YouTube:  
-[![YouTube Video](https://img.shields.io/badge/Watch%20on-YouTube-red?logo=youtube)](PUT_YOUR_VIDEO_LINK_HERE)
+[![Watch on Google Drive](https://img.shields.io/badge/Watch%20on-Google%20Drive-34A853?logo=google-drive&logoColor=white)](https://drive.google.com/file/d/14-mXjS5OGmYKUBE78VSeLt9a5gdEt8Iz/view?usp=drivesdk)
