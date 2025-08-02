@@ -1,4 +1,4 @@
-# 💰 Personal Finance Tracker
+# FinanceTracker
 
 This is a simple Android app for tracking personal financial transactions.  
 The app allows users to:
