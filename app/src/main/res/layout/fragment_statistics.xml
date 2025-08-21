@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <TextView
+        android:id="@+id/statsTitleTV_StatisticsFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/statistics_summary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnSurface"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart_StatisticsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/totalIncomeTV_StatisticsFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_income_0_00"
+        android:textSize="18sp"
+        android:textColor="@color/incomeColor"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/totalExpenseTV_StatisticsFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_expense_0_00"
+        android:textSize="18sp"
+        android:textColor="@color/expenseColor"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/balanceTV_StatisticsFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/balance_0_00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnSurface"
+        android:paddingTop="12dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/refreshStatsBtn_StatisticsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/refresh_stats"
+        style="?attr/materialButtonOutlinedStyle"
+        android:textColor="?attr/colorPrimary"
+        app:strokeColor="?attr/colorPrimary"
+        app:strokeWidth="2dp"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

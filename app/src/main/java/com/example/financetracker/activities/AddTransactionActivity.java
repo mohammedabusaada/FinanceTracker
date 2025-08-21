@@ -8,6 +8,7 @@ import android.widget.*;
 import com.example.financetracker.R;
 import com.example.financetracker.models.Transaction;
 import com.example.financetracker.utils.TransactionManager;
+import com.google.android.material.button.MaterialButton;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -17,7 +18,7 @@ public class AddTransactionActivity extends Activity {
 
     EditText amountEdT, noteEdT;
     Spinner typeSp, categorySp;
-    Button saveBtn;
+    MaterialButton saveBtn;
 
     String[] typeOptions = {"Income", "Expense"};
     String[] categoryOptions = {"Food", "Transport", "Bills", "Shopping", "Other"};

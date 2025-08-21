@@ -11,11 +11,12 @@ import androidx.appcompat.app.AlertDialog;
 import com.example.financetracker.R;
 import com.example.financetracker.models.Transaction;
 import com.example.financetracker.utils.TransactionManager;
+import com.google.android.material.button.MaterialButton;
 
 public class TransactionDetailsActivity extends Activity {
 
     TextView typeTV, categoryTV, amountTV, noteTV, dateTV;
-    Button deleteBtn;
+    MaterialButton deleteBtn;
 
     int index;
     Transaction transaction;

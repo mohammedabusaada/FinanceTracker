@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="?attr/colorSurface">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,43 +17,55 @@
             android:layout_height="wrap_content"
             android:text="@string/type"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnSurface" />
 
         <TextView
             android:id="@+id/categoryTV_TransactionDetailsActivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/category"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:layout_marginTop="8dp"/>
 
         <TextView
             android:id="@+id/amountTV_TransactionDetailsActivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/amount2"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:layout_marginTop="8dp"/>
 
         <TextView
             android:id="@+id/noteTV_TransactionDetailsActivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/note"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:layout_marginTop="8dp"/>
 
         <TextView
             android:id="@+id/dateTV_TransactionDetailsActivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/date"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:layout_marginTop="8dp"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/deleteBtn_TransactionDetailsActivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/delete_transaction"
             android:layout_marginTop="24dp"
-            android:backgroundTint="@android:color/holo_red_light" />
+            style="?attr/materialButtonOutlinedStyle"
+            android:textColor="?attr/colorError"
+            app:strokeColor="?attr/colorError"
+            app:strokeWidth="2dp"/>
 
     </LinearLayout>
 </ScrollView>

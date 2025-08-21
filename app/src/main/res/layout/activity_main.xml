@@ -1,54 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:background="?attr/colorSurface">
 
     <TextView
-        android:id="@+id/balanceTV_MainActivity"
+        android:id="@+id/welcomeTV_MainActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/balance_0_00"
+        android:text="@string/welcome_to_finance_tracker"
         android:textSize="22sp"
         android:textStyle="bold"
+        android:textColor="?attr/colorOnSurface"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:padding="12dp"/>
 
-    <TextView
-        android:id="@+id/incomeTV_MainActivity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/total_income_0_00"
-        android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@id/balanceTV_MainActivity"
-        app:layout_constraintStart_toStartOf="parent"
-        android:padding="8dp"/>
-
-    <TextView
-        android:id="@+id/expenseTV_MainActivity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/total_expense_0_00"
-        android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@id/incomeTV_MainActivity"
-        app:layout_constraintStart_toStartOf="parent"
-        android:padding="8dp"/>
-
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/addTransactionBtn_MainActivity"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/add_transaction"
-        app:layout_constraintTop_toBottomOf="@id/expenseTV_MainActivity"
+        app:layout_constraintTop_toBottomOf="@id/welcomeTV_MainActivity"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/viewTransactionsBtn_MainActivity"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -57,5 +38,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="12dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/viewStatsBtn_MainActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/view_statistics"
+        app:layout_constraintTop_toBottomOf="@id/viewTransactionsBtn_MainActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer_MainActivity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/viewStatsBtn_MainActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="?attr/colorSurface" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

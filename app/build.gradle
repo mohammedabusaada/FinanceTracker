@@ -41,7 +41,7 @@ dependencies {
     androidTestImplementation libs.espresso.core
 
     implementation libs.recyclerview
-    implementation libs.cardview
     implementation libs.gson
+    implementation libs.mpandroidchart
 
 }

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="?attr/colorSurface">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,7 +17,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/amount"
             android:inputType="numberDecimal"
-            android:layout_marginTop="12dp" />
+            android:layout_marginTop="12dp"
+            android:imeOptions="actionDone" />
 
         <Spinner
             android:id="@+id/typeSpinner_AddTransactionActivity"
@@ -34,15 +37,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/note_optional"
-            android:inputType="text"
+            android:inputType="textCapSentences"
             android:layout_marginTop="12dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/saveBtn_AddTransactionActivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/save_transaction"
-            android:layout_marginTop="20dp" />
+            android:layout_marginTop="20dp"
+            style="?attr/materialButtonOutlinedStyle"
+            android:textColor="?attr/colorPrimary"
+            app:strokeColor="?attr/colorPrimary"
+            app:strokeWidth="2dp"/>
+
 
     </LinearLayout>
 </ScrollView>
