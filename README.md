@@ -7,7 +7,7 @@ The app allows users to:
 - View a list of all transactions  
 - See details of each transaction  
 - Delete transactions  
-- 📊 View statistics of transactions in the **StatisticsFragment** (new feature)  
+- View statistics of transactions in the **StatisticsFragment** (new feature)  
 
 ---
 
