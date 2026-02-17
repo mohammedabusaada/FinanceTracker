@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_TransactionDetailsActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="?attr/colorSurface">
+    android:fitsSystemWindows="true"
+    android:background="?android:attr/windowBackground">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +20,7 @@
             android:text="@string/type"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="?attr/colorOnSurface" />
+            android:textColor="?android:attr/textColorPrimary" />
 
         <TextView
             android:id="@+id/categoryTV_TransactionDetailsActivity"
@@ -26,7 +28,7 @@
             android:layout_height="wrap_content"
             android:text="@string/category"
             android:textSize="18sp"
-            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textColor="?android:attr/textColorSecondary"
             android:layout_marginTop="8dp"/>
 
         <TextView
@@ -35,7 +37,7 @@
             android:layout_height="wrap_content"
             android:text="@string/amount2"
             android:textSize="18sp"
-            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textColor="?android:attr/textColorSecondary"
             android:layout_marginTop="8dp"/>
 
         <TextView
@@ -44,7 +46,7 @@
             android:layout_height="wrap_content"
             android:text="@string/note"
             android:textSize="18sp"
-            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textColor="?android:attr/textColorSecondary"
             android:layout_marginTop="8dp"/>
 
         <TextView
@@ -53,7 +55,7 @@
             android:layout_height="wrap_content"
             android:text="@string/date"
             android:textSize="18sp"
-            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textColor="?android:attr/textColorSecondary"
             android:layout_marginTop="8dp"/>
 
         <com.google.android.material.button.MaterialButton
@@ -62,10 +64,9 @@
             android:layout_height="wrap_content"
             android:text="@string/delete_transaction"
             android:layout_marginTop="24dp"
-            style="?attr/materialButtonOutlinedStyle"
-            android:textColor="?attr/colorError"
-            app:strokeColor="?attr/colorError"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:textColor="#FF0000"
+            app:strokeColor="#FF0000"
             app:strokeWidth="2dp"/>
-
     </LinearLayout>
 </ScrollView>

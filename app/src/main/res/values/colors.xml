@@ -4,8 +4,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="light_gray">#D3D3D3</color>
 
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
     <color name="incomeColor">#4CAF50</color>
     <color name="expenseColor">#F44336</color>
-
-    <color name="background">#FFFFFF</color>
+    <color name="background">#F4F7F9</color>
 </resources>

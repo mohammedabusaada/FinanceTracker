@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.google.services)
 }
 
 android {
@@ -44,4 +45,16 @@ dependencies {
     implementation libs.gson
     implementation libs.mpandroidchart
 
+    // Firebase Bill of Materials (BoM)
+    implementation(platform(libs.firebase.bom))
+    // Firebase Authentication
+    implementation(libs.firebase.auth)
+    // Firebase Cloud Firestore (for online database sync)
+    implementation(libs.firebase.firestore)
+
+    // Retrofit for API calls
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.gson)
+    // Gson converter to parse JSON
+    implementation(libs.gson)
 }

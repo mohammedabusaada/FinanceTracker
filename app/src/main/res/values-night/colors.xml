@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="light_gray">#D3D3D3</color>
+    <color name="black">#FFFFFFFF</color> <color name="white">#FF000000</color>
+    <color name="light_gray">#424242</color>
+
+    <color name="colorPrimary">#BB86FC</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#03DAC5</color>
 
     <color name="incomeColor">#81C784</color>
     <color name="expenseColor">#E57373</color>

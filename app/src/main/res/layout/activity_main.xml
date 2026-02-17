@@ -1,9 +1,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_MainActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="24dp"
+    android:fitsSystemWindows="true"
     android:background="?attr/colorSurface">
 
     <TextView
@@ -39,24 +41,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="12dp"/>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/viewStatsBtn_MainActivity"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/view_statistics"
-        app:layout_constraintTop_toBottomOf="@id/viewTransactionsBtn_MainActivity"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="12dp" />
-
     <FrameLayout
         android:id="@+id/fragmentContainer_MainActivity"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/viewStatsBtn_MainActivity"
+        app:layout_constraintTop_toBottomOf="@id/viewTransactionsBtn_MainActivity"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="?attr/colorSurface" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
