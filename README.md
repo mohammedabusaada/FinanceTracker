@@ -11,7 +11,7 @@ The app allows users to:
 
 ---
 
-## 🚀 New & Core Features
+## New & Core Features
 - **Secure Authentication:** Real-time user login and registration using **Firebase Auth**.
 - **Data Persistence:** All financial records are stored locally in an **SQLite Database**, ensuring data privacy and offline access.
 - **User-Specific Data:** Each user sees only their own data, filtered by their unique Firebase UID.
@@ -21,7 +21,7 @@ The app allows users to:
 
 ---
 
-## 🛠️ Technologies & Libraries Used
+## Technologies & Libraries Used
 - **Language:** Java
 - **Backend/Auth:** [Firebase Authentication](https://firebase.google.com/docs/auth)
 - **Local Database:** [SQLite](https://developer.android.com/training/data-storage/sqlite)
@@ -31,7 +31,7 @@ The app allows users to:
 
 ---
 
-## 🏗️ Architecture Flow
+## Architecture Flow
 1. **Auth Layer:** Firebase verifies the user identity.
 2. **Data Layer:** SQLite handles local storage using the `DatabaseHelper` (Prepared Statements for security).
 3. **Network Layer:** Retrofit fetches live exchange rates in a background thread (`enqueue`).
@@ -39,12 +39,12 @@ The app allows users to:
 
 ---
 
-## 👤 Created by  
+## Created by  
 Mohammed AbuSaada  
 
 ---
 
-## 📺 Video Demos  
+## Video Demos  
 
 ### Part 1  
 [![Watch on Google Drive](https://img.shields.io/badge/Watch%20Part%201%20on-Google%20Drive-34A853?logo=google-drive&logoColor=white)](https://drive.google.com/file/d/14-mXjS5OGmYKUBE78VSeLt9a5gdEt8Iz/view?usp=drivesdk)  
